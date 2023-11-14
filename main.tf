@@ -35,7 +35,7 @@
 	
 	resource "aws_route53_record" "record" {
 	  count = length(var.components)
-	  zone_id = "Z09059901XRPHNYMGLMJ4"
+	  zone_id = "Z0531070279OA6E0HE9DV"
 	  name    = "${element(var.components, count.index)}-dev"
 	  type    = "A"
 	  ttl     = 30
